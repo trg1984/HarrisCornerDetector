@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>Harris Corner Detection Algorithm in JavaScript</title>
+		<script src = "./javascript/harris.js" type = "application/x-javascript"> </script>
+	</head>
+	<body
+		style="
+			text-align:center;
+			background-color:#eee;
+			color: black;
+			font-family: 'Palatine Linotype', Serif;
+			"
+	>
+		<h1 id ="header">Harris Corner Detection Algorithm in JavaScript</h1>
+		<img
+			id = "img1"
+			src = "images/chess-679093_640.jpg"
+		/>
+		<canvas
+			id = "example"
+			width = "1"
+			height = "1"
+			oncontextmenu = "return false;"
+		>
+			HTML5 Canvas doesn't work in your browser. It's time to upgrade.
+		</canvas>
+		<p />
+		<input type="button" onclick="findCorners('img1', 'example', 0)" value="Grayscale"/>
+		<input type="button" onclick="findCorners('img1', 'example', 1)" value="Horizontal pass"/>
+		<input type="button" onclick="findCorners('img1', 'example', 2)" value="Vertical pass"/>
+		<input type="button" onclick="findCorners('img1', 'example', 3)" value="Corners"/>
+	</body>
+</html>
